@@ -1,0 +1,20 @@
+Index: app/src/main/java/com/example/playersgameapp/HomeFragment/HomeFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/playersgameapp/HomeFragment/HomeFragment.java	(date 1610866976776)
++++ app/src/main/java/com/example/playersgameapp/HomeFragment/HomeFragment.java	(date 1610866976776)
+@@ -95,12 +95,6 @@
+                     int position = linearLayoutManager.findFirstVisibleItemPosition();
+                     View view = linearLayoutManager.findViewByPosition(position);
+ 
+-                    //Playing the First Video
+-                    if (dy == 0 && view != null) {
+-                        VideoView videoView = view.findViewById(R.id.videoView2);
+-                        videoView.start();
+-                    }
+-
+                     if (view != null) {
+                         VideoView videoView = view.findViewById(R.id.videoView2);
+                         CardView playIcon = view.findViewById(R.id.cardView31);

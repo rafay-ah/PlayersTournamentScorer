@@ -1,0 +1,51 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ActionBar.nameText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="progressBarStyle" parent="android:Widget.Holo.ProgressBar">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="elevation">4dp</item>
+        <item name="minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="Bold_textView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="TextInputLayout_Border_layout">
+        <item name="theme">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="boxStrokeColor">@color/DisabledText</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+    </style>
+
+    <!-- Because TextInputEditText requires Material Theme to inflate properly.   -->
+    <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="theme">@style/ThemeOverlay.MaterialComponents.Dark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

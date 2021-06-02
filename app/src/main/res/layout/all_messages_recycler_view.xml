@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView18"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_no_profile_pic_logo_1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="4dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView18"
+        app:layout_constraintEnd_toEndOf="@+id/cardView18"
+        app:layout_constraintTop_toBottomOf="@+id/cardView18"
+        app:tint="@color/colorGreen" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView18"
+        app:layout_constraintEnd_toStartOf="@+id/imageView74"
+        app:layout_constraintStart_toEndOf="@+id/cardView18"
+        app:layout_constraintTop_toTopOf="@+id/cardView18">
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView18"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/textView158"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/DisabledText"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView18"
+            app:layout_constraintEnd_toEndOf="@+id/textView119"
+            app:layout_constraintStart_toStartOf="@+id/textView119"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/DividerBg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView74"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout23"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+    <ImageView
+        android:id="@+id/imageView74"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ActivityBackgroundColor"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context="com.players.nest.JoinMatch.JoinMatch">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:navigationIcon="@drawable/ic_baseline_clear_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Start Match" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar12">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="4dp"
+                app:cardCornerRadius="40dp"
+                android:elevation="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView10">
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_no_profile_pic_logo_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="40dp"
+                android:elevation="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView109">
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    app:srcCompat="@drawable/ic_no_profile_pic_logo_1" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toEndOf="@+id/cardView10"
+                app:layout_constraintStart_toStartOf="@+id/cardView10"
+                app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toEndOf="@+id/cardView11"
+                app:layout_constraintStart_toStartOf="@+id/cardView11"
+                app:layout_constraintTop_toTopOf="@+id/textView107" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView10"
+                app:layout_constraintEnd_toEndOf="@+id/cardView11"
+                app:layout_constraintStart_toStartOf="@+id/cardView10"
+                app:layout_constraintTop_toTopOf="@+id/cardView10"
+                app:srcCompat="@drawable/ic_vs_icon_2" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:el_expanded="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expandableLayout3">
+
+                <TextView
+                    android:id="@+id/textView126"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Rules and Match details?"
+                    android:textColor="@color/textColor" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/green_border"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="10dp"
+                android:text="@string/READY_TO_PLAY"
+                android:textColor="@color/PrimaryDarkWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expandableLayout" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandableLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:el_expanded="false"
+                app:el_parallax="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView112">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView110"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Waiting for the host to accept request."
+                        android:textColor="@color/textColor" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar6"
+                        style="@style/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="10:00"
+                android:textColor="@color/textColor"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView108"
+                app:layout_constraintStart_toEndOf="@+id/textView107"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:el_expanded="true"
+                app:layout_constraintEnd_toEndOf="@+id/textView108"
+                app:layout_constraintStart_toStartOf="@+id/textView107"
+                app:layout_constraintTop_toBottomOf="@+id/textView111">
+
+                <TextView
+                    android:id="@+id/textView125"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/MATCH_INFO_TEXT"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chat_box"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
+
+            <LinearLayout
+                android:id="@+id/linearLayout19"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tournament_tree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/view_profile_bg"
+            android:text="View Tournament Tree"
+            android:textColor="@color/PrimaryDarkWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chat_box" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

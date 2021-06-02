@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView27"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView60"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_no_profile_pic_logo_1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout37"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView27"
+        app:layout_constraintEnd_toStartOf="@+id/textView191"
+        app:layout_constraintStart_toEndOf="@+id/cardView27"
+        app:layout_constraintTop_toTopOf="@+id/cardView27">
+
+        <TextView
+            android:id="@+id/textView186"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/textView187"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/DisabledText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/grey_border"
+        android:paddingStart="16dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="2dp"
+        android:text="Send"
+        android:textColor="@color/PrimaryLightBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout37" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        style="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/post_fragment_menu"
+        app:navigationIcon="@drawable/ic_baseline_clear_24"
+        app:title="Edit Profile" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_card"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_no_profile_pic_logo_1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/changeProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Change/Remove Profile Photo"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/profile_card"
+                app:layout_constraintStart_toStartOf="@+id/profile_card"
+                app:layout_constraintTop_toBottomOf="@id/profile_card" />
+
+            <!-- username section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/userNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/changeProfilePhoto">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_videogame_asset_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:inputType="textNoSuggestions"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:hint="Username"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/DisabledText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- display_name section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/displayNameLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="@id/userNameLayout"
+                app:layout_constraintStart_toStartOf="@id/userNameLayout"
+                app:layout_constraintTop_toBottomOf="@+id/userNameLayout">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_profile_unchecked"
+                    app:layout_constraintBottom_toBottomOf="@+id/display_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/display_name" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/display_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    app:hintEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full name"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/DisabledText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- description section -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/descLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/displayNameLay"
+                app:layout_constraintStart_toStartOf="@+id/displayNameLay"
+                app:layout_constraintTop_toBottomOf="@+id/displayNameLay">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_baseline_description_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/description" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:hint="Description"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/DisabledText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/textPrivateInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Private Information"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descLayout" />
+
+
+            <!-- email section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textPrivateInfo"
+                app:layout_constraintTop_toBottomOf="@id/textPrivateInfo">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_mail_outline_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:ellipsize="end"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/DisabledText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- phone number section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="@id/relLayout5"
+                app:layout_constraintStart_toStartOf="@+id/relLayout5"
+                app:layout_constraintTop_toBottomOf="@id/relLayout5">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_call_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/phoneNumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/phoneNumber" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/DisabledText"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:translationX="-20dp"
+                android:translationY="-12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_card"
+                app:layout_constraintEnd_toEndOf="@+id/profile_card"
+                app:layout_constraintStart_toEndOf="@+id/profile_card"
+                app:layout_constraintTop_toBottomOf="@+id/profile_card"
+                app:srcCompat="@drawable/ic_plus_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

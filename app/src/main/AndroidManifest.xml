@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.players.nest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.harware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".Application.TournamentApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfileFragment.FAQ"/>
+        <activity android:name=".ProfileFragment.TermsOfService" />
+        <activity android:name=".ProfileFragment.PrivacyPolicy" />
+        <activity android:name=".MatchDisputeChat.View.PhotoOrVideoActivity" />
+        <activity android:name=".MatchDisputeChat.View.MatchDisputeChatActivity" />
+        <activity
+            android:name=".ProfileFragment.Settings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PostFragment.VideoTrimmer" />
+        <activity android:name=".InviteUsers.InviteUsers" />
+        <activity android:name=".Tournament.TournamentActivity"/>
+        <activity android:name=".MyTournamentActivity.MyTournamentActivity"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_icon" />
+
+        <activity android:name=".FanFollowingActivity.FansFollowingActivity" />
+        <activity
+            android:name=".JoinMatch.MatchDisputes"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name=".JoinMatch.SubmitActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".JoinMatch.MatchDetails" />
+        <activity
+            android:name=".JoinMatch.MatchStarted"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Tournament.JoinAlreadyCreatedActivity"/>
+        <activity android:name=".HomeFragment.CommentsActivity" />
+        <activity android:name=".JoinMatch.JoinMatch" />
+        <activity android:name=".FindMatchFragment.AlreadyCreatedMatchesActivity" />
+        <activity android:name=".MyMatchesActivity.MyMatchesActivity" />
+        <activity android:name=".GameFragment.GameActivity" />
+        <activity android:name=".SearchActivity.ViewProfileActivity" />
+        <activity
+            android:name=".SearchActivity.SearchActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".ProfileFragment.WithdrawDepositActivity"
+            android:parentActivityName=".ProfileFragment.WalletActivity" />
+        <activity android:name=".ProfileFragment.WalletActivity" />
+        <activity android:name=".ProfileFragment.EditProfile" />
+        <activity android:name=".PostFragment.PostActivity" />
+        <activity
+            android:name=".Login_Register.LoginRegisterActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" /> <!-- To directly open Chat Fragment -->
+        <activity android:name=".Chats.MainChatActivity">
+            <intent-filter>
+                <action android:name="Chat_Fragment" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- To open Alert Fragment -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ALERT_FRAGMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileFragment.DepositWithdrawWebViewActivity" />
+        <activity android:name=".Tournament.JoinTournamentActivity"/>
+        <activity android:name=".Tournament.TournamentStartedActivity"/>
+        <activity android:name=".Tournament.TournamentMatchStarted"/>
+        <activity android:name=".Tournament.TournamentSubmitActivity"/>
+    </application>
+
+</manifest>

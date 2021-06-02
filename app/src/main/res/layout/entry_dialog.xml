@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_dialog_round_corners"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="$1.00 winner wins $1.84"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$5.00 winner wins $9.2"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ten"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$10 winner wins $18.40"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twenty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$20 winner wins $36.8"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$50 winner wins $92.0"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$100 winner wins $184"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twoHundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$200 winner wins $368"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerLightBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twoHundredFifty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="$250 winner wins $460"
+            android:textColor="@color/PrimaryLightBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

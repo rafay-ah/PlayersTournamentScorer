@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030833582509",
+    "firebase_url": "https://playersgameapp.firebaseio.com",
+    "project_id": "playersgameapp",
+    "storage_bucket": "playersgameapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030833582509:android:8e29e6122c57cb16e47124",
+        "android_client_info": {
+          "package_name": "com.players.nest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030833582509-i5a4845hlpmt520lo7kjput8tb473j1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMiybB76xtMBzn-N1IpgA3m3OOCy84-OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030833582509-i5a4845hlpmt520lo7kjput8tb473j1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

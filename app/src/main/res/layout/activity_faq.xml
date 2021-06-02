@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileFragment.FAQ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <TextView
+                android:text="FAQs\n\n"
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="General\n\n"
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="What is PlayersNestWhat is PlayersNest \n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="PlayersNest is a social gaming app which was founded in 2019. It was formed after a need for social gaming from online and local gamers became apparent. It aims at uniting gamers across the world and form one gamers social community.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+            android:text="How do I sign up?\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You can sign up on our Android app\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Does it cost anything to sign up on PlayersNest?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="No You do not have to pay to sign up.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Is PlayersNest a scam?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="No, PlayersNest is not a scam. PlayersNest is the biggest platform to play video games for money in the world, and we earn money by keeping 8% of entry fees from users. We offer lower fees than any of our competitors.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+            android:text="How old must I be to use PlayersNest?\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You have to be at least 18 to play on PlayersNest. It is against our Terms of Service and the law to use our app if you are under 18. Please don't make an account if you're under 18—we'll be forced to lock it.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Is there a PlayersNest App?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Yes! You can download the app on Google play store\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Is PlayersNest legal?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Yes! Legally, PlayersNest is NOT a gambling platform, it's a platform that facilitates skill based video game competitions. PlayersNest users place wagers on THEIR OWN performance, NOT the outcome of other players’.\n\n
+Each state has its own law re: competing for cash. If you live in one of the following states, you may not play for cash prizes on PlayersNest:\n\n
+Arizona, Arkansas, Delaware, Louisiana, Maryland, Montana, South Carolina, South Dakota, and Tennessee."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="What games are on PlayersNest?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="We currently offer Madden 21, NBA 2K21, FIFA 21, Call of Duty: Modern Warfare, Black ops and Warzone, apex legends, UFC4, WWE 2K20, PES 2021, Tekken 7, MK 11, NHL 21, MLb the show 20, rocket league, street fighter v, PGA TOUR 2K21, overwatch and counter strike and Fortnite, on PlayersNest We plan to expand to other games soon. Stay tuned!\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Is the App secure?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="We place the highest concern on keeping your sensitive info protected. Our databases and servers are highly secured with encryption. We NEVER store your credit card information. All credit card transactions are done securely via our credit card processors.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="I'm not a pro gamer, can I win money on PlayersNest?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+            android:text="Casual players are making money on PlayersNest EVERY DAY!\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:text="PlayersNest is designed for non-professional and professional gamers.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The majority of PlayersNest users are students, lawyers, security guards, cashiers, accountants, developers, teachers, doctors — all types of people! Everyone is welcome.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How can I change my Rating or stars?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The only way your Rating changes is by your performance on PlayersNest. It is not possible to manually change it.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How does my money move as I use PlayersNest?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="If you create an open match or send a direct challenge, the entry fee will be temporarily removed from your account and placed into that match until it is played and given to the winner, or the match is cancelled.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How do I change my gamertag?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You can change your gamertag in your edit profile, your gamertag is your username.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Why am I being asked to submit tax information?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="If you are a US-based player, you're required by law to report income over $600 to the IRS. If you've withdrawn more than $600 from PL, it must be reported to the government. You'll have to submit your tax info to us and you'll receive a 1099 at the end of the tax year to file your taxes.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Your information is held securely and is not shared with anyone other than the IRS.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Matches\n"
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How do I play a match?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The exact steps vary by game, but in general:\n\n
+
+1. Join an instant match, create your own open match, or send a direct challenge.\n\n
+
+2. Add your opponent as a friend on Xbox Live, PSN, or PC using their Gamertag or Username.\n\n
+
+3. Go to the game mode where you can play with / against a friend online.\n\n
+
+4. Send a game invite to your opponent.\n\n
+
+5. Check and confirm the match rules and settings on the match page on PlayersNest as well as in game on your console.\n\n
+
+6. Start the match.\n\n
+
+7. Report the score on the PlayersNest match page.\n\n
+
+Note: We recommend screen recording all of your matches on your console when competing on PlayersNest. Be sure to take pictures/screenshots of the match final score in case of a dispute about the match result\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How do I cancel a match?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="To cancel a match that you've invited a player to, but that hasn't been accepted yet, go to the match page and press cancel. The match will be canceled immediately.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="If you want to cancel a match that's already been accepted, press the Cancel Match button on the match page. Your opponent will have to approve your cancellation request. If they don't want to cancel, you must play the match or forfeit, so make sure you are ready to play when you join / create a match\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="What is the Rating, or stars?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Each player has a Rating, or stars, ranked 40-100, which is an indicator of how good a player is at a game. This is determined by an algorithm that takes into account things such as the number of wins and losses a player has, who they have played against and more.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="A new player’s rank displays as '40'\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How do disputes work? How is a winner determined?\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="If you and your opponent submit conflicting scores, the match will be disputed. Upload text, or picture and video evidence on the match page to prove the game went the way you say it did. Evidence must be submitted within 10 mins.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="A PlayersNest admin will evaluate the evidence and make a final decision.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Video evidence is the strongest kind. We encourage you to record video of all matches you play on PlayersNest.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Why did I lose my dispute?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The most common reason disputes are lost is due to lack of valid evidence:\n
+
+
+No video evidence.\n
+
+No screenshots.\n
+
+Little to no explanation of the issue.\n
+
+Didn't submit the real score.\n
+
+No time stamped evidence.\n
+
+Opponents gamertag wasn't visible.\n
+
+
+Recording your gameplay is the single most important thing when playing money matches.\n
+
+
+Below are general rules and guidelines for all PlayersNest matches:\n
+
+
+If you receive an invitation on your console that doesn't match the rules laid out on this match page, DO NOT play the match.\n
+
+If you play the match, lose and submit a dispute, PlayersNest admins will not approve your dispute.\n
+
+Here at PlayersNest, we value fair play, and make what we believe is the most fair decision.\n
+
+Dispute determinations are strictly at the discretion of our admins.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="My opponent broke a rule in our match. What do I do?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text='Please review all game settings before the match starts, and again as soon as the game starts. If a game is played with incorrect rules, it is not disputable.\n
+
+
+If you receive an invitation on your console that does not match the rules laid out on your match page, do not play the match. If you begin the match, lose and submit a dispute, we cannot rule in your favor. By playing or starting a match, you are confirming that the rules were correct and agreed upon.\n
+
+
+Examples of broken rules:\n
+
+"My opponent set the match to 4min when it was supposed to be 5 min"\n
+
+            "My opponent used a team that we did not agree on"\n
+
+            "My opponent used West Coast playbook"\n
+
+            "My opponent set it to All-Pro instead of All-Madden"\n
+
+            "My opponent used a different gamertag"\n\n'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Why is my account locked?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="If your account is locked, we have evidence of you breaking our Terms of Use.\n
+
+
+Your account may be under review for one of the following violations:\n
+
+Underage (must be 18+ to play on site)\n
+
+Creating more than one account\n
+
+Multiple users on same account\n
+
+False score reporting\n
+
+Manipulating promotional offers\n
+
+Derogatory statements (racist, sexist, homophobic, etc)\n
+
+
+Our support team will be reviewing your account activity and making a decision on whether or not to PERMANENTLY block your account or re-open it. This decision is final and up to the PlayersNest Support team as listed in our Terms of Use. Please be patient—If you respond maliciously to this message, we will immediately block you from contacting support.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="When will my dispute be reviewed?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Between hours of 9am and 2am GMT, disputes will be resolved within 90 minutes. Please don't message support if you have a dispute open. We will get to it soon as possible. Thank you!\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How can I contact support?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You can also contact support via email at playersapp882@gmail.com\n
+Please don't message support if you have a dispute open. We will get to it soon as possible. Thank you!\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Withdrawal and Deposit\n"
+
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How can I deposit funds into my Players’ Lounge account?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The most popular ways to deposit funds to your account are: credit / debit card, or Paypal.\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="I am not from the US, do I get charged any fees for currency exchange? Where do you get your exchange rate from?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The currency used on PlayersNest is USD. If you deposit with a foreign card, you may see a small discrepancy between the amount you requested to deposit, and the amount your card was charged. The rates are established by your bank / card issuer, not by PlayersNest\n
+There can be tax implications from your winnings, so we must ensure that all of our users are who they claim they are.\n\n  "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How can I withdraw my money?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You can access the withdrawal page on the profile page then click wallet, then click the 'Withdraw' button.\n
+                Enter your withdrawal info, including how much money you want to withdraw and your paypal email address. Then click the 'Request Withdrawal' button.\n
+
+8% is taken when you withdraw as withdrawal fee because paypal charges PlayersNest when you deposit\n
+
+You'll have your money in 5 business days, or on the day of your request if you paid for a same-day withdrawal!\n\n
+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Where is my withdrawal?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Standard withdrawals take 24 hours (M-F) to process. Sometimes the withdrawal can delay up to 48 hours\n
+Withdrawals should be submitted from 9am - 9pm GMT. Withdrawals submitted after this time will be processed the next day\n
+
+On Saturday you can withdraw from 9am to 6pm\n
+
+ Funds are not released on Sundays.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Posts\n"
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="How do I create a post?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="You can create a post at the + icon and accept PlayersNest to read on your storage\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Games and Consoles\n"
+                android:textSize="20sp"
+                android:textAppearance="@style/Bold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Which Games are played on playstation and xbox?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Fifa 21,  nba 2k21, mortal Kombat 11, PES 21, Tekken 7, WWE 2k21, madden NFL 21, Ufc 4, MLb the show 20, NHL 21, PGA TOUR 2k21, Street Fighter V\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Which Games are played on PC?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Counter strike global offense\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Which Games are played on Xbox Playstation controller?\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Fortnite, COD : Modern Warfare, Warzone and Black Ops 3, Apex legends, overwatch and Rocket league\n\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

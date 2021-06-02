@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar16"
+        style="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Match Started" />
+
+    <ProgressBar
+        android:id="@+id/progressBar9"
+        style="@style/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar16" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar16"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp">
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    app:el_expanded="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView165"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/OPPONENT_SUBMITTED_SCORES"
+                            android:textColor="@color/textColor"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/textColor" />
+
+                    </LinearLayout>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView20"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="4dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardView19">
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_no_profile_pic_logo_1" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView19"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView130">
+
+                    <ImageView
+                        android:id="@+id/imageView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_no_profile_pic_logo_1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView107"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                    app:layout_constraintStart_toStartOf="@+id/cardView19"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView19" />
+
+                <TextView
+                    android:id="@+id/textView108"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView20"
+                    app:layout_constraintStart_toStartOf="@+id/cardView20"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView20" />
+
+                <TextView
+                    android:id="@+id/textView130"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="FIFA 21"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableLayout7" />
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cardView19"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView20"
+                    app:layout_constraintStart_toStartOf="@+id/cardView19"
+                    app:layout_constraintTop_toTopOf="@+id/cardView19"
+                    app:srcCompat="@drawable/ic_vs_icon_2" />
+
+                <TextView
+                    android:id="@+id/textView128"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/accent_border"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/SUBMIT_SCORES"
+                    android:textColor="@color/PrimaryDarkWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expandableLayout5" />
+
+                <TextView
+                    android:id="@+id/textView129"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="90:00"
+                    android:textColor="@color/textColor"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView42"
+                    app:layout_constraintStart_toStartOf="@+id/imageView42"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:el_expanded="false"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView20"
+                    app:layout_constraintStart_toStartOf="@+id/cardView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView129">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp">
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_bg"
+                            android:gravity="center"
+                            android:hint="Score"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textColorHint="@color/DisabledText"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_bg"
+                            android:gravity="center"
+                            android:hint="Score"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textColorHint="@color/DisabledText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView133"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="@string/ENTER_CORRECT_SCORES"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false"
+                    app:layout_constraintEnd_toEndOf="@+id/textView128"
+                    app:layout_constraintStart_toStartOf="@+id/textView128"
+                    app:layout_constraintTop_toBottomOf="@+id/textView128">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView131"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/accent_border"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="10dp"
+                        android:text="CANCEL MATCH"
+                        android:textColor="@color/PrimaryDarkWhite"
+                        />
+
+                        <TextView
+                            android:id="@+id/textView132"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/accent_border"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingStart="16dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="16dp"
+                            android:paddingBottom="10dp"
+                            android:text="CANCEL"
+                            android:textColor="@color/PrimaryDarkWhite" />
+
+                    </LinearLayout>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                app:el_expanded="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

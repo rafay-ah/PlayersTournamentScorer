@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">PlayersNest</string>
+
+
+    <!-- Firebase database fields -->
+    <string name="DB_USERS">users</string>
+    <string name="DB_USER_POSTS">User_Posts</string>
+    <string name="DB_USERS_RATINGS">ratings</string>
+    <string name="DB_FOLLOW">Followers_Followings</string>
+    <string name="USER_FOLLOWING">User_Followings</string>
+    <string name="USER_FOLLOWERS">User_Followers</string>
+
+    <string name="DB_POST">Posts</string>
+    <string name="USER_DATA">User_Data</string>
+
+    <string name="DB_POST_LIKES">Likes</string>
+    <string name="DB_GAMES">Games</string>
+    <string name="DB_GAMES_FORMAT">GamesFormats</string>
+    <string name="DB_GAMES_RULES">GameRules</string>
+    <string name="DB_MATCH_DETAILS">Match_Details</string>
+    <string name="DB_CHATS">Chats</string>
+    <string name="DB_USERS_MESSAGES">UsersMessages</string>
+    <string name="DB_COMMENTS">Comments</string>
+    <string name="POST_FOLDER">Posts/</string>
+
+
+    <!--  DB Matches    -->
+    <string name="DB_MATCHES">Matches</string>
+    <string name="REJECTED_USERS">rejectedUsersIds</string>
+    <string name="JOINED_USER_ID">joinedUserID</string>
+    <string name="MATCH_STATUS">matchStatus</string>
+    <string name="MATCH_WINNER">matchWinner</string>
+    <string name="FINISHED_TIME">matchFinishedTime</string>
+    <string name="APPROVAL_STATUS">Approval</string>
+    <string name="DB_MATCH_DISPUTES">Match_Disputes</string>
+    <string name="MATCH_DISPUTES_FOLDER">Match Disputes</string>
+
+
+    <string name="dbname_userName">userName</string>
+    <string name="dbname_followers">Followers</string>
+    <string name="dbname_stories">stories</string>
+
+
+    <string name="PROFILE_GRID_VIEW">PROFILE_POSTS</string>
+
+    <string name="FORGET_PASSWORD_STRING">Recovery Email sent successfully. Please check your Inbox to reset your password.</string>
+    <string name="FOLLOWING_STRING">Following</string>
+    <string name="DEPOSIT_STRING">Enter the amount of money to Deposit.</string>
+    <string name="DEPOSIT">Deposit</string>
+    <string name="WITHDRAW_DESCRIPTION">is been deducted from your wallet.
+        It will take up to 48 hours to transfer into your paypal address.</string>
+
+
+    <!-- In App String Resources   -->
+    <string name="FIND_ALL_MATCHES">FIND_ALL_MATCHES</string>
+    <string name="SELECTED_GAME_MATCHES">SELECTED_GAME_MATCHES</string>
+    <string name="SEARCH_HISTORY">Search_History</string>
+    <string name="RULES_AND_REGULATION">Please read the match, game and PlayersNest chosen rule before starting the match.
+        Confirm if you are ready to play. If you\'re not confirmed within the 10 min period, the match will be cancelled and
+        you\'re money will be refunded back.</string>
+
+    <string name="NOT_READY">NOT READY TO PLAY</string>
+    <string name="READY_TO_PLAY">READY TO PLAY</string>
+    <string name="SUBMIT_SCORES">SUBMIT SCORES</string>
+    <string name="MATCH_CANCELLED">MATCH CANCELLED</string>
+    <string name="DB_MATCHES_JOINED">MatchesJoined</string>
+
+
+    <string name="MATCH_INFO_TEXT">Match will be cancelled in next 10 minutes if you\'re not ready to play.</string>
+    <string name="MATCH_CANCELLED_DIALOG">The Match has been cancelled. Your money is refunded. Please search other matches.</string>
+    <string name="EXIT_DIALOG_TEXT">Going back will cancel the match and you can\'t again play this match.
+    </string>
+
+
+    <string name="PLAYER_JOINED_MESSAGE">has requested to join the match.</string>
+    <string name="HOST_FAILED_TO_JOIN">You failed to join the match.</string>
+    <string name="ENTER_CORRECT_SCORES">Kindly submit the correct scores to avoid being banned and fined from the players nest.</string>
+    <string name="HOST_REJECTED_DIALOG">The Host has rejected your match request.
+        Please check other matches to play.</string>
+    <string name="SUBMIT_RESULT_DIALOG">Are you sure this is the correct score?</string>
+    <string name="DELETE_MY_MATCH">Your match will be deleted. Money will be refunded within few minutes.</string>
+    <string name="CONFIRM_CREATE_MATCH">Confirm create match? Entry Amount will get deducted from your wallet.</string>
+    <string name="CONFIRM_JOIN_MATCH">Confirm Join? Entry Amount will get deducted from your wallet.</string>
+    <string name="YOU_CANT_ENTER_MATCH">You can\'t enter a live ongoing match. The match has started. Please search for other matches.</string>
+    <string name="DB_POST_COMMENT">comments</string>
+    <string name="VIEW_ALL_COMMENTS">%d</string>
+    <string name="OPPONENT_SUBMITTED_SCORES">%s has Submitted the score. Please Submit your score
+        before the timer ends.</string>
+    <string name="SCORE_SUBMITTED">Score submitted by %s</string>
+    <string name="WAITING_FOR_SCORES">Waiting for %s to approve the score…</string>
+    <string name="WAITING_FOR_APPROVAL">Waiting for %s for approval…</string>
+    <string name="THIS_SCORE_WILL_SUBMITTED">This score will get submitted. And the result will be based on this score.</string>
+    <string name="ENTER_DISPUTE_DIALOG_MSG">WRONG SCORES! Confirm enter a match dispute between your opponent?</string>
+    <string name="WINNER_DESC">YAY! you won the match. Winning amount will be transferred to your wallet within few moments.</string>
+    <string name="LOSER_DESC">You lost the match. Better luck next Time. Try other available matches to make a comeback.</string>
+    <string name="ALERT_MATCH_WINNER">%s defeated you in %s.</string>
+    <string name="ALERT_MATCH_LOSER">You defeated %s in %s.</string>
+    <string name="WINNING_AMOUNT">Winning Amount: $%.2f</string>
+    <string name="MATCH_DISPUTE_TXT">You have entered in a match dispute. Submit your evidence to the admin to approve.</string>
+    <string name="SUBMIT_EVIDENCE">You have enter in a match dispute with %s. Please submit your score evidence.</string>
+
+    <string name="EVIDENCE_SUBMITTED">Match evidence successfully submitted. Please wait for Admin approval.</string>
+    <string name="MATCH_REQUEST_BODY">%s has requested to join your created match.</string>
+    <string name="MATCH_REQUEST_TITLE">Match Request for %s</string>
+    <string name="OPPONENT_SUBMITTED_SCORE_NOTIFICATION_BODY">%s has submitted the score. Please approve the scores.</string>
+    <string name="CHAT_IMAGES_FOLDER">ChatImages</string>
+    <string name="SEND_INVITATION_ALERT_MSG">\"Confirm send request? Entry amount will be deducted from your wallet.
+        If the user didn\'t accept your match request within the next 24 hours, you\'re money will be refunded. \"</string>
+    <string name="MATCH_INVITATION">%s has sent you a match request.</string>
+    <string name="FOLLOW_NOTIF">%s started following you.</string>
+
+    <string name="EVIDENCE_SUBMITTED_SUCCESSFULLY">Evidence successfully submitted. Please wait for approval by the admin.</string>
+    <string name="CANCEL_REQUEST_MSG">Confirm cancel match request?. You\'re money will be refunded immediately.</string>
+    <string name="MATCH_REQUEST_MSG">%s has sent you a match request.</string>
+    <string name="DB_MATCHES_SCORES">Scores</string>
+    <string name="DB_MATCHES_SCORE_APPROVAL">ScoreApproval</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <!-- Video Trimmer   -->
+    <string name="short_seconds">min</string>
+    <string name="megabyte">MB</string>
+    <string name="kilobyte">KB</string>
+
+    <!--Match Disputes (fb.com/bihimstudios)-->
+    <string name="ADMIN_APPROVED">Dispute is approved by admin. Please enter chat.</string>
+    <string name="NO_FILE_UPLOADED">No files are submitted. Submit files to continue.</string>
+
+    <!--Match Disputes Chat-->
+    <string name="USER_ONE_NAME">User 1 Evidence</string>
+    <string name="MESSAGE">User One Message</string>
+
+</resources>

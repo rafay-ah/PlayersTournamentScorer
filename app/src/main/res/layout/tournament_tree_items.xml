@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="92dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border">
+
+            <TextView
+                android:id="@+id/tv_rating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                tools:text="(45)" />
+
+            <TextView
+                android:id="@+id/tv_username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                tools:text="Username1"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.2"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_border">
+
+            <TextView
+                android:id="@+id/tv_rating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                tools:text="(45)" />
+
+            <TextView
+                android:id="@+id/tv_username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                tools:text="Username1" />
+
+            <TextView
+                android:id="@+id/tv_score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.2"
+                android:text="-" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_h"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/line_color" />
+
+    <View
+        android:id="@+id/line_v"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-9dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>

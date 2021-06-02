@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myMatches"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"
+        android:title="My Matches" />
+    <item
+        android:id="@+id/myTournament"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"
+        android:title="My Tournaments" />
+
+
+    <item
+        android:id="@+id/findMatches"
+        android:icon="@drawable/ic_console"
+        android:title="Find Matches" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+    <item
+        android:id="@+id/FAQS"
+        android:icon="@drawable/ic_faq"
+        android:title="FAQS"/>
+    <item
+        android:id="@+id/privacyPolicy"
+        android:icon="@drawable/privacy"
+        android:title="Privacy Policy"/>
+    <item
+        android:id="@+id/TOS"
+        android:icon="@drawable/privacy"
+        android:title="Terms of Service"/>
+
+    <item
+        android:id="@+id/logOut"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="Log Out" />
+
+</menu>

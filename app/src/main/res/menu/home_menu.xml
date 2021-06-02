@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search_icon"
+        android:title=""
+        android:icon="@drawable/ic_home_search_icon"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/chatIcon"
+        android:title=""
+        android:icon="@drawable/ic_chat_icon_2"
+        app:showAsAction="always"/>
+
+
+</menu>

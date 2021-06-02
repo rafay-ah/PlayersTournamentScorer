@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/video_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/snippet_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_video_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:paddingBottom="4dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/handlerTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textTimeSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_toStartOf="@+id/textTime"
+                android:layout_toEndOf="@+id/textSize"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+        <SeekBar
+            android:id="@+id/handlerTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:max="1000"
+            android:progressDrawable="@android:color/transparent"
+            android:secondaryProgress="0"
+            android:layout_marginBottom="4dp"
+            android:thumb="@drawable/ic_handle"
+            app:layout_constraintBottom_toTopOf="@+id/timeLineView"
+            app:layout_constraintEnd_toEndOf="@+id/timeVideoView"
+            app:layout_constraintStart_toStartOf="@+id/timeVideoView" />
+
+        <com.players.nest.VideoTrimmer.view.ProgressBarView
+            android:id="@+id/timeVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/timeLineView" />
+
+        <com.players.nest.VideoTrimmer.view.TimeLineView
+            android:id="@+id/timeLineView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/timeLineBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/timeLineBar" />
+
+        <com.players.nest.VideoTrimmer.view.RangeSeekBarView
+            android:id="@+id/timeLineBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/lineTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/lineTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/timeLineBar"
+            android:background="@color/line_button"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout46" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/line_button" />
+
+            <Button
+                android:id="@+id/btSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
